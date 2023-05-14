@@ -24,7 +24,7 @@
 &lt 3 TAB  &kp Q  &kp W    &kp E    &kp R     &kp T                                   &kp Y       &kp U     &kp I     &kp O    &kp P     &kp MINUS
 &kp LGUI   &kp A  &kp S    &kp D    &kp F     &kp G                                   &kp H       &kp J     &kp K     &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X    &kp C    &kp V     &kp B       &kp ENTER   &kp C_MUTE      &kp N       &kp M     &kp COMMA &kp DOT  &kp FSLH  &mt RSHFT BSLH
-                  &kp LCTRL &mo 2    &kp LALT  &lt 1 LBKT  &kp SPACE   &kp BSPC        &lt 1 RBKT  &kp RALT  &kp RGUI  &kp ENTER
+                  &kp LCTRL &mo 2    &kp LALT  &lt 1 LBKT  &kp SPACE   &kp BSPC        &lt 1 RBKT  &kp CAPS  &kp RGUI  &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp RBKT LBKT &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -43,7 +43,7 @@
 &trans    &kp MINUS  &kp UP    &kp EQUAL   &kp PG_UP &kp F11                          &trans    &kp KP_SLASH  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS
 &trans    &kp LEFT   &kp DOWN  &kp RIGHT   &kp PG_DN &kp DELETE                       &trans    &kp STAR      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS
 &trans    &kp BSPC   &kp ENTER &kp HOME    &kp END   &trans      &kp C_MUTE    &trans &trans    &kp KP_DOT    &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_EQUAL
-                     &trans    &kp CAPS    &trans    &trans      &trans        &trans &trans    &trans        &kp KP_N0  &trans
+                     &trans    &trans      &trans    &trans      &trans        &trans &trans    &trans        &kp KP_N0  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
