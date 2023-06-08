@@ -18,13 +18,13 @@
 // |TAB(3) |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
 // |  GUI  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  ENTER  |  | MUTE |  N   |  M    |  ,    |  .   |   /   |SHIFT(\)|
-//               | CTRL| MO(2)| ALT  |LOWER([)| SPACE |  | BKSPC |LOWER(])| ALT  | GUI   | ENTER  |
+//               | CTRL| MO(2)| ALT  |LOWER([)| SPACE |  | BKSPC |LOWER(])| GLOBE/CAPS(3)  | GUI   | ENTER  |
             bindings = <
 &kp ESC    &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                                  &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &kp EQUAL
 &lt 3 TAB  &kp Q  &kp W    &kp E    &kp R     &kp T                                   &kp Y       &kp U     &kp I     &kp O    &kp P     &kp MINUS
 &kp LGUI   &kp A  &kp S    &kp D    &kp F     &kp G                                   &kp H       &kp J     &kp K     &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X    &kp C    &kp V     &kp B       &kp ENTER   &kp C_MUTE      &kp N       &kp M     &kp COMMA &kp DOT  &kp FSLH  &mt RSHFT BSLH
-                  &kp LCTRL &mo 2    &kp LALT  &lt 1 LBKT  &kp SPACE   &kp BSPC        &lt 1 RBKT  &kp CAPS  &kp RGUI  &kp ENTER
+                  &kp LCTRL &mo 2    &kp LALT  &lt 1 LBKT  &kp SPACE   &kp BSPC        &lt 1 RBKT  &lt 3 CAPS  &kp RGUI  &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp RBKT LBKT &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -71,14 +71,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // |     | 6  | 7  |  8  |  9  |  0 |                |      |      |       |      |       |       |
 // |     | Y  | U  | I   |  O  | P  |                |      |      |       |      |       |       |
-// |     |    | H  | J   |  K  | L  |                |      |      |       |      |       |       |
-// |     | /? | N  |  M  |  ,  |  . |      |  |      |      |      |       |      |       |       |
+// |     |    | H  | J   |  K  | L  |                |      |      |       |      |  UP   |       |
+// |     | /? | N  |  M  |  ,  |  . |      |  |      |      |      |       |LEFT  | DOWN  |RIGHT  |
 //            |    |     |     |    |      |  |      |      |      |       |      |
             bindings = <
 &trans     &kp N6   &kp N7  &kp N8 &kp N9     &kp N0                       &trans    &trans    &trans   &trans    &trans  &trans
 &trans     &kp Y    &kp U   &kp I  &kp O      &kp P                        &trans    &trans    &trans   &trans    &trans  &trans
-&trans     &trans   &kp H   &kp J  &kp K      &kp L                        &trans    &trans    &trans   &trans    &trans  &trans
-&trans     &kp FSLH &kp N   &kp M  &kp COMMA  &kp PERIOD  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
+&trans     &trans   &kp H   &kp J  &kp K      &kp L                        &trans    &trans    &trans   &trans    &kp UP  &trans
+&trans     &kp FSLH &kp N   &kp M  &kp COMMA  &kp PERIOD  &trans   &trans  &trans    &trans    &trans   &kp LEFT   &kp DOWN  &kp RIGHT
                     &trans  &trans &trans     &trans      &trans   &trans  &trans    &trans    &trans   &trans
             >;
 
